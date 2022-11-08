@@ -1,0 +1,24 @@
+/*producto*/
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: $size*12;
+    margin: 0 2em;
+    padding-bottom: 2em;
+}
+
+.producto{
+    border-radius: 2em;
+    border: $borde-1;
+    text-align: center;
+    cursor: pointer;
+
+    img{
+        width: 100%;
+        border-radius: 2em 2em 0 0;
+    }
+    
+    p{
+        margin: 0;
+    }
+}

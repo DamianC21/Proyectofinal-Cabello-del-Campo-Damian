@@ -1,0 +1,44 @@
+/*contacto*/
+.container-formularios{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2em 2em 0;
+    padding-bottom: 2em;
+}
+
+.img-local{
+
+    img{
+        width: 800px;
+        height: 350px;
+    }
+}
+
+.contactanos{
+    
+    h1{
+        text-align: center;
+        margin: 0;
+        text-decoration: underline;
+    }
+}
+
+.formularios{
+    text-align: center;
+
+    div{
+        margin-bottom: 0.2em;
+    }
+}
+
+input{
+    text-align: center;
+    border-radius: 2em;
+    border: $borde-1;
+}
+
+textarea{
+    border-radius: 5px;
+    border: $borde-1;
+}

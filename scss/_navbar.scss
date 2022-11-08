@@ -1,0 +1,38 @@
+/*navbar*/
+.navegacion{
+
+    ul{
+        margin: 0;
+        padding: $size*8 4em;
+        text-align: center;
+        background-color: $oscuro;
+        
+        li{
+            padding: 0.2em;
+
+            a{
+                font-weight: bold;
+                display: block;
+                padding: 5px;
+                text-decoration: none;
+                color: $naranja;
+                border: $borde-2;
+                
+                &:hover{
+                    border-radius: 5px;
+                    border: $borde-1;
+                }
+            }
+
+        }
+    }
+        
+}
+
+
+#categoria{
+    background-color: $naranja;
+    color: $blanco;
+    border-radius: 5px;
+    border: $borde-1;
+}

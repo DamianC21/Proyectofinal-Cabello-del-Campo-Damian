@@ -1,0 +1,86 @@
+/*inicio*/
+main{
+    background-color: $oscuro;
+}
+
+.slider__img{
+    @include size (400px,100%);
+}
+
+.titulo{
+    text-align: center;
+    padding: 0;
+    margin: $size*8 0;
+}
+
+.inicio-info {
+    ul{
+        @extend .grid;
+        margin: 0;
+        padding: 1em;
+        grid-gap: $size*10;
+        background-color: $naranja;
+
+        li{
+            display: flex;
+            align-items: center;
+            padding: 0;
+        }
+    }
+    
+    h4{
+        margin: 0;
+        color:$negro;
+        font-weight: bold;
+    }
+}
+
+.novedades-container{
+    @extend .grid;
+    grid-gap: $size*10;
+    text-align: center;
+}
+
+.novedades-container__imagenes{
+    
+    img{
+        @include size (400px,350px);
+        border-radius: 2em 2em 0 0;
+        box-sizing: content-box;
+    }
+}
+
+.novedades-container__texto{
+    
+    p{
+        @include size (100px,350px);
+        margin: 0 auto;
+        padding-top: 1em;
+        background-color: $rojo;
+        border-radius: 0 0 2em 2em;
+        font-weight:bold;
+        color: $oscuro;
+    }    
+}
+
+.marcas{
+
+    background-color: $oscuro;
+    @extend .grid;
+
+    ul{
+        background-color: $blanco;
+        margin: 0 0 2em;
+        padding: 0;
+        text-align: center;
+
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+/*solucion para que bts no modifique la navbar en las demas categorias*/
+.oculto{
+    display: none;
+}

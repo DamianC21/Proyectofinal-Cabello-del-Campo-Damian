@@ -1,0 +1,27 @@
+/*variables*/
+$size: 2px;
+$oscuro:#1e1e1e;
+$naranja:#ff8000;
+$blanco:#f2f2f2;
+$rojo:#df0208;
+$negro:#000;
+
+$letra: 'Montserrat', sans-serif;
+
+$borde-1: 1px solid #ff8000;
+$borde-2: 1px solid #1e1e1e;
+
+/*extend*/
+.grid{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+/*mixin*/
+@mixin size ($alto,$ancho) {
+    height: $alto;
+    width: $ancho;
+}
+
+
+
